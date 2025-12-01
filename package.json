@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaithra-M-S/react-.git"
+  },
+  "keywords": [],
+  "author": "chaithra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaithra-M-S/react-/issues"
+  },
+  "homepage": "https://github.com/Chaithra-M-S/react-#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+ }
