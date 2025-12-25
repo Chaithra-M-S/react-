@@ -722,63 +722,1815 @@ $parcel$ReactRefreshHelpers$5fe5.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
-/* <div id='parent'>
-  <div id='child1'>
-    <h1></h1>
-    <h2></h2>
-    <h3></h3>
-  </div>
-  <div id='child2'>
-    <h1></h1>
-    <h2></h2>
-    <h3></h3>
-  </div>
-</div> */ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement('div', {
-    id: 'parent'
-}, [
-    /*#__PURE__*/ (0, _reactDefault.default).createElement('div', {
-        id: 'child1',
-        key: 'child1'
-    }, [
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h1', {
-            key: 'h1-1'
-        }, "I amm h1 tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h2', {
-            key: 'h2-1'
-        }, "I am 2 Tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h3', {
-            key: 'h3-1'
-        }, "I am h3 Tag")
-    ]),
-    /*#__PURE__*/ (0, _reactDefault.default).createElement('div', {
-        id: 'child2',
-        key: 'child2'
-    }, [
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h1', {
-            key: 'h1-2'
-        }, "I am h1 tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h2', {
-            key: 'h2-2'
-        }, "I am h2 Tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement('h3', {
-            key: 'h3-2'
-        }, "I am h3 Tag")
-    ])
-]);
-// const heading=React.createElement('h1',{id:'heading',xyz:"abc"},'Hello World From React !!');
-console.log(heading); // cReatying the object
-const root = (0, _client.createRoot)(document.getElementById('root'));
-root.render(heading);
+var _clientDefault = parcelHelpers.interopDefault(_client);
+const Headers = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-conatiner",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33O1LaxMhATyj1PGfN16DLrJEP-cbwGc1PQ&s"
+                }, void 0, false, {
+                    fileName: "app.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "app.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Headers;
+const RestaurentCard = (props)=>{
+    const { resData } = props;
+    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, deliveryTime } = resData?.info;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: avgRating
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    resData.info.sla.deliveryTime,
+                    " minutes"
+                ]
+            }, void 0, true, {
+                fileName: "app.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 29,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = RestaurentCard;
+const resobj = [
+    {
+        "info": {
+            "id": "23700",
+            "name": "McDonald's",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/2cf6a7b8-507f-4908-95fa-a8ac271eafa8_23700.JPG",
+            "locality": "2nd Stage",
+            "areaName": "Banashankari",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Burgers",
+                "Beverages",
+                "Cafe",
+                "Desserts"
+            ],
+            "avgRating": 4.4,
+            "parentId": "630",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "53K+",
+            "sla": {
+                "deliveryTime": 14,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "10-15 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 02:45:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/Bolt.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/Bolt.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B999"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/mcdonalds-2nd-stage-banashankari-rest23700",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "23831",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/11/11/8f8228e9-e42a-420c-8c17-8604822cec8e_23831.JPG",
+            "locality": "2nd Stage",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Pizzas",
+                "Italian",
+                "Pastas",
+                "Desserts"
+            ],
+            "avgRating": 4.4,
+            "parentId": "2456",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "14K+",
+            "sla": {
+                "deliveryTime": 20,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-22 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/dominos-pizza-2nd-stage-jayanagar-rest23831",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "1468",
+            "name": "A2B - Adyar Ananda Bhavan",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/15/76699afa-e1cf-4970-ad7b-c0ada8f8ac02_1468.JPG",
+            "locality": "Basavanagudi",
+            "areaName": "Basavanagudi",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "North Indian",
+                "Sweets",
+                "Chinese"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "22",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "19K+",
+            "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 2.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "2.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-22 22:30:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-South%20Indian.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-South%20Indian.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9139"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.2",
+                    "ratingCount": "4.3K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/a2b-adyar-ananda-bhavan-basavanagudi-rest1468",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "5271",
+            "name": "Subway",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/57beeb67-2ab4-4694-b985-a307bd1b7020_5271.jpg",
+            "locality": "5TH Block",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9350 for two",
+            "cuisines": [
+                "sandwich",
+                "Salads",
+                "wrap",
+                "Healthy Food"
+            ],
+            "avgRating": 4.3,
+            "parentId": "2",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "23K+",
+            "sla": {
+                "deliveryTime": 14,
+                "lastMileTravel": 1.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "10-15 mins",
+                "lastMileTravelString": "1.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 01:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "discountTag": "FLAT DEAL"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/subway-5th-block-jayanagar-rest5271",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "437065",
+            "name": "Theobroma",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/4/272b029b-50ea-401d-8ca9-6e9f182dcec4_437065.JPG",
+            "locality": "Jayanagar",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Desserts",
+                "Bakery",
+                "Beverages"
+            ],
+            "avgRating": 4.6,
+            "parentId": "1040",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "9.1K+",
+            "sla": {
+                "deliveryTime": 14,
+                "lastMileTravel": 1.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "10-15 mins",
+                "lastMileTravelString": "1.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 01:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Desserts.png",
+                        "description": "Delivery!"
+                    },
+                    {
+                        "imageId": "newg.png",
+                        "description": "Gourmet"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Gourmet",
+                                    "imageId": "newg.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "15% OFF",
+                "discountTag": "FLAT DEAL"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.0",
+                    "ratingCount": "536"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/theobroma-jayanagar-rest437065",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "420020",
+            "name": "Bakingo",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/11/5786fd80-c41a-456a-9623-3f982bead04f_420020.JPG",
+            "locality": "3rd Stage",
+            "areaName": "Banashankari",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts",
+                "Beverages",
+                "Snacks"
+            ],
+            "avgRating": 4.5,
+            "parentId": "3818",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "7.6K+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 3.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "3.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 01:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9149"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/bakingo-3rd-stage-banashankari-rest420020",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "12804",
+            "name": "Nandhana Palace",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/21/b7ac73e5-adf2-495c-b8e1-37fd8f504660_12804.jpg",
+            "locality": "JP Nagar",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9500 for two",
+            "cuisines": [
+                "Biryani",
+                "Andhra",
+                "South Indian",
+                "North Indian"
+            ],
+            "avgRating": 4.5,
+            "parentId": "2120",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "26K+",
+            "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "2.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Biryani.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Biryani.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B999"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.2",
+                    "ratingCount": "7.1K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/nandhana-palace-jp-nagar-jayanagar-rest12804",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "376977",
+            "name": "Big Bowl",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/deff0d02-ca1d-4ef9-9d62-b0cbeabf33d3_376977.JPG",
+            "locality": "Yelachenahalli",
+            "areaName": "Kanakapura Road",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese",
+                "Tibetan",
+                "Desserts"
+            ],
+            "avgRating": 4.3,
+            "parentId": "434792",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "2.3K+",
+            "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 3.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "3.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/big-bowl-yelachenahalli-kanakapura-road-rest376977",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "394084",
+            "name": "Chinese Wok",
+            "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+            "locality": "3rd Stage",
+            "areaName": "Banashankari",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Chinese",
+                "Asian",
+                "Tibetan",
+                "Desserts"
+            ],
+            "avgRating": 4.3,
+            "parentId": "61955",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "5.6K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 3.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "3.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 02:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/chinese-wok-3rd-stage-banashankari-rest394084",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "488779",
+            "name": "Chaayos Chai+Snacks=Relax",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/f92c604d-68cb-49db-8dec-9473650c363d_488779.JPG",
+            "locality": "Jayanagar",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Bakery",
+                "Beverages",
+                "Chaat",
+                "Desserts",
+                "Home Food",
+                "Italian",
+                "Maharashtrian",
+                "Snacks",
+                "Street Food",
+                "Sweets"
+            ],
+            "avgRating": 4.5,
+            "parentId": "281782",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "1.9K+",
+            "sla": {
+                "deliveryTime": 18,
+                "lastMileTravel": 1.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "1.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 00:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/chaayos-chai-snacks-relax-jayanagar-rest488779",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "70253",
+            "name": "Starbucks Coffee",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/8/22/ae29a6f5-939e-462d-b053-2063e6d8463d_70253.JPG",
+            "locality": "4th Block",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Beverages",
+                "Cafe",
+                "Snacks",
+                "Desserts",
+                "Bakery",
+                "Ice Cream"
+            ],
+            "avgRating": 4.4,
+            "parentId": "195515",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "6.0K+",
+            "sla": {
+                "deliveryTime": 16,
+                "lastMileTravel": 1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "1.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-22 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png",
+                        "description": "Delivery!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/starbucks-coffee-4th-block-jayanagar-rest70253",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "49704",
+            "name": "California Burrito",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/3/490cc0d0-4bb4-4589-b869-023334806f71_49704.jpg",
+            "locality": "5th Phase",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Mexican",
+                "American",
+                "Salads",
+                "Continental",
+                "Keto",
+                "Healthy Food",
+                "Beverages",
+                "Snacks",
+                "Desserts",
+                "Fast Food"
+            ],
+            "avgRating": 4.6,
+            "parentId": "1252",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "29K+",
+            "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 03:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "High%20Protein/rx%20tag%205.png",
+                        "description": "High Protein"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "High Protein",
+                                    "imageId": "High%20Protein/rx%20tag%205.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B979"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/california-burrito-5th-phase-jayanagar-rest49704",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "597395",
+            "name": "Taco Bell",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/10/158d78b7-263c-4e8f-9953-7ab75e29bbad_597395.JPG",
+            "locality": "4th Block",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Mexican",
+                "Fast Food",
+                "Snacks"
+            ],
+            "avgRating": 4.3,
+            "parentId": "1557",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "3.8K+",
+            "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 2.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "2.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 01:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/Global%20Flavours.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/Global%20Flavours.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/taco-bell-4th-block-jayanagar-rest597395",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "289263",
+            "name": "BOX8 - Desi Meals",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/26/1efbc340-41ae-438e-8433-047670c13033_289263.jpg",
+            "locality": "1st Phase",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "North Indian",
+                "Biryani",
+                "Thalis",
+                "Home Food"
+            ],
+            "avgRating": 4.6,
+            "parentId": "10655",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "4.0K+",
+            "sla": {
+                "deliveryTime": 15,
+                "lastMileTravel": 1.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "10-20 mins",
+                "lastMileTravelString": "1.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/box8-desi-meals-1st-phase-jayanagar-rest289263",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "153731",
+            "name": "Dindigul Thalappakatti - Since 1957\n",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/21/b3302735-3f0d-4850-8266-9bfdea74b10a_153731.JPG",
+            "locality": "Jayanagar",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9550 for two",
+            "cuisines": [
+                "Biryani",
+                "Barbecue",
+                "South Indian",
+                "Chinese",
+                "North Indian"
+            ],
+            "avgRating": 4.2,
+            "parentId": "641506",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "11K+",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 1.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "1.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-22 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.3",
+                    "ratingCount": "7.2K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/dindigul-thalappakatti-since-1957-jayanagar-rest153731",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "354049",
+            "name": "EatFit",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/6/cd543a68-0eb6-4ab9-bfd2-8f13f93cd752_354049.jpg",
+            "locality": "3rd Stage",
+            "areaName": "Jayanagar",
+            "costForTwo": "\u20B9270 for two",
+            "cuisines": [
+                "Chinese",
+                "Healthy Food",
+                "Tandoor",
+                "Pizzas",
+                "North Indian",
+                "Thalis",
+                "Biryani"
+            ],
+            "avgRating": 4.5,
+            "parentId": "76139",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "7.9K+",
+            "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 2.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "2.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-23 01:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "High%20Protein/rx%20tag%205.png",
+                        "description": "High Protein"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "High Protein",
+                                    "imageId": "High%20Protein/rx%20tag%205.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/eatfit-3rd-stage-jayanagar-rest354049",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "156164",
+            "name": "The Good Bowl",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/07007c47-1fb7-459e-9643-b5f1dbc9bd58_156164.jpg",
+            "locality": "RV Rd",
+            "areaName": "Basavangudi",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Biryani",
+                "North Indian",
+                "Pastas",
+                "Punjabi",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4.4,
+            "parentId": "7918",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "1.6K+",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 2.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "2.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-12-22 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35328822-2128-4ce8-ab0e-0e9edee3405d"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/bangalore/the-good-bowl-rv-rd-basavangudi-rest156164",
+            "type": "WEBLINK"
+        }
+    }
+];
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search restaurants..."
+                    }, void 0, false, {
+                        fileName: "app.js",
+                        lineNumber: 1852,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "app.js",
+                        lineNumber: 1853,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "app.js",
+                lineNumber: 1851,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: resobj.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        resData: restaurant
+                    }, restaurant.info.id, false, {
+                        fileName: "app.js",
+                        lineNumber: 1858,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 1855,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 1850,
+        columnNumber: 5
+    }, undefined);
+};
+_c2 = Body;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "App",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Headers, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 1872,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 1873,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 1871,
+        columnNumber: 5
+    }, undefined);
+};
+_c3 = AppLayout;
+const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 1878,
+    columnNumber: 13
+}, undefined));
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Headers");
+$RefreshReg$(_c1, "RestaurentCard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "AppLayout");
 
   $parcel$ReactRefreshHelpers$5fe5.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-dom/client":"hrvwu"}],"jMk1U":[function(require,module,exports,__globalThis) {
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-dom/client":"hrvwu","react/jsx-dev-runtime":"dVPUn"}],"jMk1U":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -19528,6 +21280,218 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}]},["aj62f","4ZGjQ"], "4ZGjQ", "parcelRequirea9e5", {}, null, null, "http://localhost:1234")
+},{"6f0162e9ab224cd4":"jMk1U"}],"dVPUn":[function(require,module,exports,__globalThis) {
+'use strict';
+module.exports = require("ee51401569654d91");
+
+},{"ee51401569654d91":"gnlQf"}],"gnlQf":[function(require,module,exports,__globalThis) {
+/**
+ * @license React
+ * react-jsx-dev-runtime.development.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    function getComponentNameFromType(type) {
+        if (null == type) return null;
+        if ("function" === typeof type) return type.$$typeof === REACT_CLIENT_REFERENCE ? null : type.displayName || type.name || null;
+        if ("string" === typeof type) return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+            case REACT_ACTIVITY_TYPE:
+                return "Activity";
+        }
+        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_CONTEXT_TYPE:
+                return type.displayName || "Context";
+            case REACT_CONSUMER_TYPE:
+                return (type._context.displayName || "Context") + ".Consumer";
+            case REACT_FORWARD_REF_TYPE:
+                var innerType = type.render;
+                type = type.displayName;
+                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
+                return type;
+            case REACT_MEMO_TYPE:
+                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                innerType = type._payload;
+                type = type._init;
+                try {
+                    return getComponentNameFromType(type(innerType));
+                } catch (x) {}
+        }
+        return null;
+    }
+    function testStringCoercion(value) {
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        try {
+            testStringCoercion(value);
+            var JSCompiler_inline_result = !1;
+        } catch (e) {
+            JSCompiler_inline_result = !0;
+        }
+        if (JSCompiler_inline_result) {
+            JSCompiler_inline_result = console;
+            var JSCompiler_temp_const = JSCompiler_inline_result.error;
+            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            JSCompiler_temp_const.call(JSCompiler_inline_result, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", JSCompiler_inline_result$jscomp$0);
+            return testStringCoercion(value);
+        }
+    }
+    function getTaskName(type) {
+        if (type === REACT_FRAGMENT_TYPE) return "<>";
+        if ("object" === typeof type && null !== type && type.$$typeof === REACT_LAZY_TYPE) return "<...>";
+        try {
+            var name = getComponentNameFromType(type);
+            return name ? "<" + name + ">" : "<...>";
+        } catch (x) {
+            return "<...>";
+        }
+    }
+    function getOwner() {
+        var dispatcher = ReactSharedInternals.A;
+        return null === dispatcher ? null : dispatcher.getOwner();
+    }
+    function UnknownOwner() {
+        return Error("react-stack-top-frame");
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return !1;
+        }
+        return void 0 !== config.key;
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        function warnAboutAccessingKey() {
+            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
+        }
+        warnAboutAccessingKey.isReactWarning = !0;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: !0
+        });
+    }
+    function elementRefGetterWithDeprecationWarning() {
+        var componentName = getComponentNameFromType(this.type);
+        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
+        componentName = this.props.ref;
+        return void 0 !== componentName ? componentName : null;
+    }
+    function ReactElement(type, key, props, owner, debugStack, debugTask) {
+        var refProp = props.ref;
+        type = {
+            $$typeof: REACT_ELEMENT_TYPE,
+            type: type,
+            key: key,
+            props: props,
+            _owner: owner
+        };
+        null !== (void 0 !== refProp ? refProp : null) ? Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            get: elementRefGetterWithDeprecationWarning
+        }) : Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            value: null
+        });
+        type._store = {};
+        Object.defineProperty(type._store, "validated", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: 0
+        });
+        Object.defineProperty(type, "_debugInfo", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: null
+        });
+        Object.defineProperty(type, "_debugStack", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugStack
+        });
+        Object.defineProperty(type, "_debugTask", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugTask
+        });
+        Object.freeze && (Object.freeze(type.props), Object.freeze(type));
+        return type;
+    }
+    function jsxDEVImpl(type, config, maybeKey, isStaticChildren, debugStack, debugTask) {
+        var children = config.children;
+        if (void 0 !== children) {
+            if (isStaticChildren) {
+                if (isArrayImpl(children)) {
+                    for(isStaticChildren = 0; isStaticChildren < children.length; isStaticChildren++)validateChildKeys(children[isStaticChildren]);
+                    Object.freeze && Object.freeze(children);
+                } else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+            } else validateChildKeys(children);
+        }
+        if (hasOwnProperty.call(config, "key")) {
+            children = getComponentNameFromType(type);
+            var keys = Object.keys(config).filter(function(k) {
+                return "key" !== k;
+            });
+            isStaticChildren = 0 < keys.length ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
+            didWarnAboutKeySpread[children + isStaticChildren] || (keys = 0 < keys.length ? "{" + keys.join(": ..., ") + ": ...}" : "{}", console.error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', isStaticChildren, children, keys, children), didWarnAboutKeySpread[children + isStaticChildren] = !0);
+        }
+        children = null;
+        void 0 !== maybeKey && (checkKeyStringCoercion(maybeKey), children = "" + maybeKey);
+        hasValidKey(config) && (checkKeyStringCoercion(config.key), children = "" + config.key);
+        if ("key" in config) {
+            maybeKey = {};
+            for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+        } else maybeKey = config;
+        children && defineKeyPropWarningGetter(maybeKey, "function" === typeof type ? type.displayName || type.name || "Unknown" : type);
+        return ReactElement(type, children, maybeKey, getOwner(), debugStack, debugTask);
+    }
+    function validateChildKeys(node) {
+        isValidElement(node) ? node._store && (node._store.validated = 1) : "object" === typeof node && null !== node && node.$$typeof === REACT_LAZY_TYPE && ("fulfilled" === node._payload.status ? isValidElement(node._payload.value) && node._payload.value._store && (node._payload.value._store.validated = 1) : node._store && (node._store.validated = 1));
+    }
+    function isValidElement(object) {
+        return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    var React = require("58362d9d82be395f"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+        return null;
+    };
+    React = {
+        react_stack_bottom_frame: function(callStackForError) {
+            return callStackForError();
+        }
+    };
+    var specialPropKeyWarningShown;
+    var didWarnAboutElementRef = {};
+    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
+    var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
+    var didWarnAboutKeySpread = {};
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsxDEV = function(type, config, maybeKey, isStaticChildren) {
+        var trackActualOwner = 1e4 > ReactSharedInternals.recentlyCreatedOwnerStacks++;
+        return jsxDEVImpl(type, config, maybeKey, isStaticChildren, trackActualOwner ? Error("react-stack-top-frame") : unknownOwnerDebugStack, trackActualOwner ? createTask(getTaskName(type)) : unknownOwnerDebugTask);
+    };
+})();
+
+},{"58362d9d82be395f":"jMk1U"}]},["aj62f","4ZGjQ"], "4ZGjQ", "parcelRequirea9e5", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React.f72d0d54.js.map

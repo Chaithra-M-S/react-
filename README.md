@@ -17,5 +17,8 @@
 -Tree shaking --remove usused code
 -part no
 -zero config
--
 
+React Hooks (Normal Utility Funations)
+u-useState()----maintains state of the components/variables
+
+-useEffect()
