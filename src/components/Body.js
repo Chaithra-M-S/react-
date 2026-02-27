@@ -44,9 +44,7 @@ const Body = () => {
     }
   };
 
-  if (listOfRestaurants.length === 0) {
-    return <Shimmer />;
-  }
+
 
   //NormAL VARIABLE
   // let listOfRestaurantsjs = [
@@ -88,11 +86,11 @@ const Body = () => {
 
 
   // ];
-  return (
+  return listOfRestaurants.length === 0 ? (<Shimmer />) : (
     <div className="body">
       <div className="search">
-        <input type="text" placeholder="Search restaurants..." />
-        <button>Search</button>
+        <input type="text" className="search-box" placeholder="Search restaurants..." />
+        <button className="search-btn">Search</button>
       </div>
       <div className="filter">
         <button className="filter-btn" onClick={() => {
