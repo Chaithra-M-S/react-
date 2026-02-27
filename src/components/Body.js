@@ -1,7 +1,8 @@
 import RestaurentCard from "./RestaurentCard";
 
-import { useState } from 'react';
-import resobj from "../utils/mockdata";
+import { useEffect, useState } from 'react';
+// import resobj from "../utils/mockdata";
+import Shimmer from "./Shimmer.js";
 
 
 
@@ -9,9 +10,43 @@ import resobj from "../utils/mockdata";
 const Body = () => {
 
   //states variables-super powerfull variable
-  const [listOfRestaurants, setListOfRestaurants] = useState(resobj);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
+  const fetchData = async () => {
+    try {
+      const data = await fetch(
+        "https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9225329&lng=77.5754835&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
 
+      const json = await data.json();
+
+      // Step 1: Get all cards
+      const cards = json?.data?.cards || [];
+
+      // Step 2: Find the card which contains restaurants
+      const restaurantCard = cards.find(
+        (c) =>
+          c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+
+      // Step 3: Extract restaurants array
+      const restaurants =
+        restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+      console.log("Restaurants:", restaurants);
+
+      setListOfRestaurants(restaurants || []);
+    } catch (err) {
+      console.error("Error fetching:", err);
+    }
+  };
+
+  if (listOfRestaurants.length === 0) {
+    return <Shimmer />;
+  }
 
   //NormAL VARIABLE
   // let listOfRestaurantsjs = [
