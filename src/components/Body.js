@@ -11,6 +11,9 @@ const Body = () => {
 
   //states variables-super powerfull variable
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -39,9 +42,11 @@ const Body = () => {
       console.log("Restaurants:", restaurants);
 
       setListOfRestaurants(restaurants || []);
+      setFilteredRestaurants(restaurants || []);
     } catch (err) {
       console.error("Error fetching:", err);
     }
+
   };
 
 
@@ -89,8 +94,11 @@ const Body = () => {
   return listOfRestaurants.length === 0 ? (<Shimmer />) : (
     <div className="body">
       <div className="search">
-        <input type="text" className="search-box" placeholder="Search restaurants..." />
-        <button className="search-btn">Search</button>
+        <input type="text" className="search-box" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+        <button className="search-btn" onClick={() => {
+          const filteredRestaurants = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+          setFilteredRestaurants(filteredRestaurants);
+        }}>Search</button>
       </div>
       <div className="filter">
         <button className="filter-btn" onClick={() => {
@@ -101,7 +109,7 @@ const Body = () => {
       </div >
       <div className="res-container">
         {
-          listOfRestaurants.map((restaurant) => (
+          filteredRestaurants.map((restaurant) => (
             <RestaurentCard resData={restaurant} key={restaurant.info.id}></RestaurentCard>
           ))}
 
