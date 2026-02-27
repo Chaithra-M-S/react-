@@ -1,6 +1,6 @@
 /node_modules
 /dist
-/parcel-cache
+/.parcel-cache
 /build
 /.env
 utils/mockdata.js
